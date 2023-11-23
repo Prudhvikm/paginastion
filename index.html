@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Infomartion</h1>
+    <div class="box">
+        <div class="bigbox">
+            <div id="displayAera" class="Space">
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
 
+            <div class="Space">
+                <p class="text-left">CurrentPage: <span id="currentPage" class="link"></span></p>
+                <div class="d-flex">
+                    <button class="btn" id="first"><i class="fa fa-chevron-left"></i>First</button>
+                    <button class="btn" id="prev"><i class="fa fa-chevron-left"></i>Previous</button>
+                    <div class="page-btns" id="pageBtn"></div>
+                    <button class="btn" id="next">Next<i class="fa fa-chevron-right"></i></button>
+                    <button class="btn" id="last">Last<i class="fa fa-chevron-right"></i> <i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="scrript.js"></script>
+</body>
+</html>
